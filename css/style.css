@@ -1,3 +1,7 @@
+*   {
+    padding: 0;
+    margin: 0;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -39,16 +43,14 @@ body {
 }
 
 #campo-tarefa   {
+    width: 50%;
+    padding-left: 20px;
     border-radius: 16px;
     border: black solid;
-    padding-right: 500px;
+    margin-top: 20px;
     padding-bottom: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-}
-
-li {
-    margin-right: 200px;
 }
 
 #botao-adicionar {
@@ -68,8 +70,14 @@ li {
 }
 
 #lista-tarefas {
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
     list-style: none ;
+    width: 70%;
+    justify-content: center;;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .tarefa {
@@ -85,16 +93,21 @@ li {
 }
 
 .concluida  {
-    text-decoration: line-through;
     color: rgb(68, 218, 68);
 }
 
 .botao-excluir  {
     border-radius: 20px;
-    margin-left: 500px;
-    margin-top: 20px;
-    max-width: 70% ;
+    width: 70px;
+    height: 20px;
     color: black;
     background-color:rgb(248, 49, 49);
 }
 
+li  {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border: solid 3px;
+    border-radius: 20px;
+}
